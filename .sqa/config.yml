@@ -1,0 +1,42 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/Deltares/hydromt:
+      branch: main
+      repo: https://github.com/Deltares/hydromt
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/2.0.0
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/Deltares/hydromt git:
+        commands:
+        - /usr/bin/env sh .sqa/script.beady-mustard-chinchilla.sh
+        container: qc.acc_pasty-cardinal-dormouse
+  QC.Doc:
+    repos:
+      github.com/Deltares/hydromt find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.crabby-lilac-turtle.sh
+        container: qc.doc_ready-tomato-retriever
+      github.com/Deltares/hydromt git:
+        commands:
+        - /usr/bin/env sh .sqa/script.muggy-rose-oriole.sh
+        container: qc.doc_trippy-cardinal-peccary
+  QC.Lic:
+    repos:
+      github.com/Deltares/hydromt licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.silly-crimson-ant.sh
+        container: qc.lic_leaky-goldenrod-sponge
+  QC.Ver:
+    repos:
+      github.com/Deltares/hydromt get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.boozy-cinnabar-caterpillar.sh
+        container: qc.ver_sloppy-gold-gibbon
+timeout: 5400
