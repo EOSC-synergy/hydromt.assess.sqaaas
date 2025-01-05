@@ -1,6 +1,6 @@
 {
     "meta": {
-        "version": "3.0.0",
+        "version": "3.2.1",
         "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/hydromt.assess.sqaaas/main/.report/assessment_output.json"
     },
     "repository": [
@@ -35,7 +35,7 @@
                             "message": "Source code uses Git for version control",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-boolean",
-                                "version": "1.2.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "git",
@@ -87,7 +87,7 @@
                             "message": "A README file is present in the code repository",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-find_doc_files",
-                                "version": "1.2.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "find_doc_files.py",
@@ -148,7 +148,7 @@
                             "message": "A CODE_OF_CONDUCT file is present in the code repository",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-find_doc_files",
-                                "version": "1.2.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "find_doc_files.py",
@@ -209,7 +209,7 @@
                             "message": "A CONTRIBUTING file is present in the code repository",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-find_doc_files",
-                                "version": "1.2.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "find_doc_files.py",
@@ -270,7 +270,7 @@
                             "message": "Documentation resides in the same repository as code",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-boolean",
-                                "version": "1.2.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "git",
@@ -319,7 +319,7 @@
                             "message": "An Open Source license found in the code repository: MIT",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-licensee",
-                                "version": "1.2.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "licensee",
@@ -455,7 +455,7 @@
                             "message": "LICENSE file is visible at the root path of the code repository: LICENSE",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-licensee",
-                                "version": "1.2.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "licensee",
@@ -591,7 +591,7 @@
                             "message": "License MIT is approved by the Open Source Initiative",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-licensee",
-                                "version": "1.2.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "licensee",
@@ -727,7 +727,7 @@
                             "message": "License MIT is listed under the Open Source Initiative popular category",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-licensee",
-                                "version": "1.2.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "licensee",
@@ -873,7 +873,7 @@
                             "message": "The code repository uses tags for releasing new software versions",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-is_semver",
-                                "version": "1.0.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "get_git_tags.py",
@@ -931,7 +931,7 @@
                             "message": "Latest release tag v0.9.2 found, but is not SemVer compliant",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-is_semver",
-                                "version": "1.0.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "get_git_tags.py",
@@ -990,7 +990,7 @@
                             "message": "Not all release tags are SemVer compliant",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-is_semver",
-                                "version": "1.0.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "get_git_tags.py",
@@ -1140,79 +1140,79 @@
             "criteria": {
                 "bronze": {
                     "to_fulfill": [
+                        "QC.Acc",
                         "QC.Lic",
-                        "QC.Doc",
-                        "QC.Acc"
+                        "QC.Doc"
                     ],
                     "missing": [],
                     "fulfilled": [
+                        "QC.Acc",
                         "QC.Lic",
-                        "QC.Doc",
-                        "QC.Acc"
+                        "QC.Doc"
                     ]
                 },
                 "silver": {
                     "to_fulfill": [
-                        "QC.Ver",
                         "QC.Acc",
                         "QC.Lic",
-                        "QC.Doc",
-                        "QC.Met"
+                        "QC.Ver",
+                        "QC.Met",
+                        "QC.Doc"
                     ],
                     "missing": [
                         "QC.Met"
                     ],
                     "fulfilled": [
-                        "QC.Doc",
-                        "QC.Lic",
+                        "QC.Acc",
                         "QC.Ver",
-                        "QC.Acc"
+                        "QC.Lic",
+                        "QC.Doc"
                     ]
                 },
                 "gold": {
                     "to_fulfill": [
-                        "QC.Sty",
-                        "QC.Ver",
-                        "QC.Uni",
                         "QC.Acc",
                         "QC.Sec",
+                        "QC.Uni",
                         "QC.Lic",
-                        "QC.Doc",
-                        "QC.Met"
+                        "QC.Ver",
+                        "QC.Sty",
+                        "QC.Met",
+                        "QC.Doc"
                     ],
                     "missing": [
-                        "QC.Sty",
-                        "QC.Uni",
                         "QC.Sec",
+                        "QC.Uni",
+                        "QC.Sty",
                         "QC.Met"
                     ],
                     "fulfilled": [
-                        "QC.Doc",
-                        "QC.Lic",
+                        "QC.Acc",
                         "QC.Ver",
-                        "QC.Acc"
+                        "QC.Lic",
+                        "QC.Doc"
                     ]
                 }
             },
             "data": {
                 "entityType": "Assertion",
-                "entityId": "KZeGJA7XS02TZm0wxBF0WA",
-                "openBadgeId": "https://api.eu.badgr.io/public/assertions/KZeGJA7XS02TZm0wxBF0WA",
-                "createdAt": "2024-02-01T16:05:53.430966071Z",
+                "entityId": "1-P-F7t-QyKprodCdNmC-g",
+                "openBadgeId": "https://api.eu.badgr.io/public/assertions/1-P-F7t-QyKprodCdNmC-g",
+                "createdAt": "2025-01-05T17:41:20.425282677Z",
                 "createdBy": "aS1lWKgIR4u8bGjPZUzAyg",
                 "badgeclass": "UOmgyH_TSpSPXiro4aNBoQ",
                 "badgeclassOpenBadgeId": "https://api.eu.badgr.io/public/badges/UOmgyH_TSpSPXiro4aNBoQ",
                 "issuer": "aS1lWKgIR4u8bGjPZUzAyg",
                 "issuerOpenBadgeId": "https://api.eu.badgr.io/public/issuers/aS1lWKgIR4u8bGjPZUzAyg",
-                "image": "https://api.eu.badgr.io/public/assertions/KZeGJA7XS02TZm0wxBF0WA/image",
+                "image": "https://api.eu.badgr.io/public/assertions/1-P-F7t-QyKprodCdNmC-g/image",
                 "recipient": {
-                    "identity": "sha256$51657f0bb3b775b6d6667047cf20f4ede4a96887203a0f53fd554e9c58303855",
+                    "identity": "sha256$6cfa06bb23fb449acb978e6bf96323f7c59037733606d6484fd22d92bcd4ab66",
                     "hashed": true,
                     "type": "url",
-                    "salt": "ZjD1sZr5HTSH9HCS",
+                    "salt": "c3aVGPOI0ZFfK758",
                     "plaintextIdentity": "https://github.com/Deltares/hydromt"
                 },
-                "issuedOn": "2024-02-01T16:05:53.430969475Z",
+                "issuedOn": "2025-01-05T17:41:20.425285497Z",
                 "narrative": "SQAaaS assessment results for repository https://github.com/Deltares/hydromt (commit: 9ab302ef28b1ad4947771d2652f23032b87fb528, branch/tag: main)",
                 "evidence": [
                     {
@@ -1230,7 +1230,7 @@
                 "expires": null,
                 "extensions": {},
                 "assertionRef": {
-                    "assertionUrl": "https://api.eu.badgr.io/public/assertions/KZeGJA7XS02TZm0wxBF0WA"
+                    "assertionUrl": "https://api.eu.badgr.io/public/assertions/1-P-F7t-QyKprodCdNmC-g"
                 },
                 "badgeRef": {
                     "badgeUrl": "https://api.eu.badgr.io/public/badges/UOmgyH_TSpSPXiro4aNBoQ"
@@ -1242,10 +1242,10 @@
                 "source": "local",
                 "sourceUrl": null,
                 "originalJson": null,
-                "imagePath": "uploads/badges/assertion-KZeGJA7XS02TZm0wxBF0WA.png"
+                "imagePath": "uploads/badges/assertion-1-P-F7t-QyKprodCdNmC-g.png"
             },
-            "share": "<!--\nSPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>\n\nSPDX-License-Identifier: GPL-3.0-only\n-->\n\n<blockquote class=\"badgr-badge\" style=\"font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;\"><a href=\"https://api.eu.badgr.io/public/assertions/KZeGJA7XS02TZm0wxBF0WA?identity__url=https%3A//github.com/EOSC-synergy/hydromt.assess.sqaaas/commit/3173a1fa8401aa38990f0b1a59bb41d29f667764\"><img width=\"120px\" height=\"120px\" src=\"https://api.eu.badgr.io/public/assertions/KZeGJA7XS02TZm0wxBF0WA/image\"></a><script async=\"async\" src=\"https://eu.badgr.com/assets/widgets.bundle.js\"></script></blockquote>",
-            "verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FKZeGJA7XS02TZm0wxBF0WA?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fhydromt.assess.sqaaas%2Fcommit%2F3173a1fa8401aa38990f0b1a59bb41d29f667764&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fhydromt.assess.sqaaas%2Fcommit%2F3173a1fa8401aa38990f0b1a59bb41d29f667764"
+            "share": "<!--\nSPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>\nSPDX-FileContributor: Pablo Orviz <orviz@ifca.unican.es>\n\nSPDX-License-Identifier: GPL-3.0-only\n-->\n\n<blockquote class=\"badgr-badge\" style=\"font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;\"><a href=\"https://api.eu.badgr.io/public/assertions/1-P-F7t-QyKprodCdNmC-g?identity__url=https%3A//github.com/EOSC-synergy/hydromt.assess.sqaaas/commit/3173a1fa8401aa38990f0b1a59bb41d29f667764\"><img width=\"120px\" height=\"120px\" src=\"https://api.eu.badgr.io/public/assertions/1-P-F7t-QyKprodCdNmC-g/image\"></a><script async=\"async\" src=\"https://eu.badgr.com/assets/widgets.bundle.js\"></script></blockquote>",
+            "verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2F1-P-F7t-QyKprodCdNmC-g?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fhydromt.assess.sqaaas%2Fcommit%2F3173a1fa8401aa38990f0b1a59bb41d29f667764&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fhydromt.assess.sqaaas%2Fcommit%2F3173a1fa8401aa38990f0b1a59bb41d29f667764"
         }
     }
 }
