@@ -1153,10 +1153,10 @@
                 },
                 "silver": {
                     "to_fulfill": [
+                        "QC.Met",
                         "QC.Acc",
                         "QC.Lic",
                         "QC.Ver",
-                        "QC.Met",
                         "QC.Doc"
                     ],
                     "missing": [
@@ -1164,55 +1164,55 @@
                     ],
                     "fulfilled": [
                         "QC.Acc",
-                        "QC.Ver",
                         "QC.Lic",
+                        "QC.Ver",
                         "QC.Doc"
                     ]
                 },
                 "gold": {
                     "to_fulfill": [
+                        "QC.Met",
                         "QC.Acc",
+                        "QC.Lic",
                         "QC.Sec",
                         "QC.Uni",
-                        "QC.Lic",
-                        "QC.Ver",
                         "QC.Sty",
-                        "QC.Met",
+                        "QC.Ver",
                         "QC.Doc"
                     ],
                     "missing": [
+                        "QC.Met",
                         "QC.Sec",
                         "QC.Uni",
-                        "QC.Sty",
-                        "QC.Met"
+                        "QC.Sty"
                     ],
                     "fulfilled": [
                         "QC.Acc",
-                        "QC.Ver",
                         "QC.Lic",
+                        "QC.Ver",
                         "QC.Doc"
                     ]
                 }
             },
             "data": {
                 "entityType": "Assertion",
-                "entityId": "WWW5x1lJT5iwYX0uO6YngA",
-                "openBadgeId": "https://api.eu.badgr.io/public/assertions/WWW5x1lJT5iwYX0uO6YngA",
-                "createdAt": "2025-01-06T11:18:03.382609296Z",
+                "entityId": "PdyCbMtTTlO5l1fLdmZoRw",
+                "openBadgeId": "https://api.eu.badgr.io/public/assertions/PdyCbMtTTlO5l1fLdmZoRw",
+                "createdAt": "2025-01-24T10:20:03.179345435Z",
                 "createdBy": "aS1lWKgIR4u8bGjPZUzAyg",
                 "badgeclass": "UOmgyH_TSpSPXiro4aNBoQ",
                 "badgeclassOpenBadgeId": "https://api.eu.badgr.io/public/badges/UOmgyH_TSpSPXiro4aNBoQ",
                 "issuer": "aS1lWKgIR4u8bGjPZUzAyg",
                 "issuerOpenBadgeId": "https://api.eu.badgr.io/public/issuers/aS1lWKgIR4u8bGjPZUzAyg",
-                "image": "https://api.eu.badgr.io/public/assertions/WWW5x1lJT5iwYX0uO6YngA/image",
+                "image": "https://api.eu.badgr.io/public/assertions/PdyCbMtTTlO5l1fLdmZoRw/image",
                 "recipient": {
-                    "identity": "sha256$dc87e7685af3c2d3ab0685c3e3f24e76494a38d48755e0c759ab50daa2042988",
+                    "identity": "sha256$cc5f6a8e3801112c72604119a674afb57534ac50de2fa71cedb1c422229c3c86",
                     "hashed": true,
                     "type": "url",
-                    "salt": "UZthhh85FctJyDif",
+                    "salt": "P9zzv8SHIEqD5GwA",
                     "plaintextIdentity": "https://github.com/Deltares/hydromt"
                 },
-                "issuedOn": "2025-01-06T11:18:03.382613145Z",
+                "issuedOn": "2025-01-24T10:20:03.179346077Z",
                 "narrative": "SQAaaS assessment results for repository https://github.com/Deltares/hydromt (commit: 9ab302ef28b1ad4947771d2652f23032b87fb528, branch/tag: main)",
                 "evidence": [
                     {
@@ -1230,7 +1230,7 @@
                 "expires": null,
                 "extensions": {},
                 "assertionRef": {
-                    "assertionUrl": "https://api.eu.badgr.io/public/assertions/WWW5x1lJT5iwYX0uO6YngA"
+                    "assertionUrl": "https://api.eu.badgr.io/public/assertions/PdyCbMtTTlO5l1fLdmZoRw"
                 },
                 "badgeRef": {
                     "badgeUrl": "https://api.eu.badgr.io/public/badges/UOmgyH_TSpSPXiro4aNBoQ"
@@ -1242,10 +1242,10 @@
                 "source": "local",
                 "sourceUrl": null,
                 "originalJson": null,
-                "imagePath": "uploads/badges/assertion-WWW5x1lJT5iwYX0uO6YngA.png"
+                "imagePath": "uploads/badges/assertion-PdyCbMtTTlO5l1fLdmZoRw.png"
             },
-            "share": "<!--\nSPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>\nSPDX-FileContributor: Pablo Orviz <orviz@ifca.unican.es>\n\nSPDX-License-Identifier: GPL-3.0-only\n-->\n\n<blockquote class=\"badgr-badge\" style=\"font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;\"><a href=\"https://api.eu.badgr.io/public/assertions/WWW5x1lJT5iwYX0uO6YngA?identity__url=https%3A//github.com/EOSC-synergy/hydromt.assess.sqaaas/commit/3173a1fa8401aa38990f0b1a59bb41d29f667764\"><img width=\"120px\" height=\"120px\" src=\"https://api.eu.badgr.io/public/assertions/WWW5x1lJT5iwYX0uO6YngA/image\"></a><script async=\"async\" src=\"https://eu.badgr.com/assets/widgets.bundle.js\"></script></blockquote>",
-            "verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FWWW5x1lJT5iwYX0uO6YngA?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fhydromt.assess.sqaaas%2Fcommit%2F3173a1fa8401aa38990f0b1a59bb41d29f667764&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fhydromt.assess.sqaaas%2Fcommit%2F3173a1fa8401aa38990f0b1a59bb41d29f667764"
+            "share": "<!--\nSPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>\nSPDX-FileContributor: Pablo Orviz <orviz@ifca.unican.es>\n\nSPDX-License-Identifier: GPL-3.0-only\n-->\n\n<blockquote class=\"badgr-badge\" style=\"font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;\"><a href=\"https://api.eu.badgr.io/public/assertions/PdyCbMtTTlO5l1fLdmZoRw?identity__url=https%3A//github.com/EOSC-synergy/hydromt.assess.sqaaas/commit/3173a1fa8401aa38990f0b1a59bb41d29f667764\"><img width=\"120px\" height=\"120px\" src=\"https://api.eu.badgr.io/public/assertions/PdyCbMtTTlO5l1fLdmZoRw/image\"></a><script async=\"async\" src=\"https://eu.badgr.com/assets/widgets.bundle.js\"></script></blockquote>",
+            "verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FPdyCbMtTTlO5l1fLdmZoRw?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fhydromt.assess.sqaaas%2Fcommit%2F3173a1fa8401aa38990f0b1a59bb41d29f667764&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fhydromt.assess.sqaaas%2Fcommit%2F3173a1fa8401aa38990f0b1a59bb41d29f667764"
         }
     }
 }
